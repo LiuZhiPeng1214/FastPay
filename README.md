@@ -4,22 +4,20 @@
 Usage(使用)
 -------------------------------------------------------------------------------------------------------------
 
-In the build.gradle:
-	Step 1. Add the JitPack repository to your build file
+1.在 build.gradle中使用在	
 	
-	Add it in your root build.gradle at the end of repositories:
-		allprojects {
+	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
 	
-	Step 2. Add the dependency
-	
-	dependencies {
-	        compile 'com.github.LiuZhiPeng1214:FastPay:v1.0'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
 	}
-	
-
-	
+2.下载库后导入
+	compile project(':fastintegrationpay')
