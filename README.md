@@ -4,7 +4,7 @@
 Usage(使用)
 -------------------------------------------------------------------------------------------------------------
 
-1.在 build.gradle中使用在	
+1.在 build.gradle中使用
 	
 	allprojects {
 		repositories {
@@ -20,4 +20,5 @@ Usage(使用)
 		}
 	}
 2.下载库后导入
+
 	compile project(':fastintegrationpay')
