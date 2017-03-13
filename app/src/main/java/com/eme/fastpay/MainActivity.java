@@ -10,6 +10,9 @@ import com.eme.fastintegrationpay.FastPay;
 import com.eme.fastintegrationpay.FastPayCallBack.FastPayCallBack;
 import com.eme.fastintegrationpay.alipay.AliPay;
 import com.eme.fastintegrationpay.alipay.AliPayInfoImpli;
+import com.eme.fastintegrationpay.unionpay.Mode;
+import com.eme.fastintegrationpay.unionpay.UnionPay;
+import com.eme.fastintegrationpay.unionpay.UnionPayInfoImpli;
 import com.eme.fastintegrationpay.wxpay.WXPay;
 import com.eme.fastintegrationpay.wxpay.WXPayInfoImpli;
 
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button btnAliPay= (Button) findViewById(R.id.btn_alipay);
         Button btnWXPay= (Button) findViewById(R.id.btn_wxpay);
+        Button btnUnionPay= (Button) findViewById(R.id.btn_unionpay);
         btnAliPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,8 +39,39 @@ public class MainActivity extends AppCompatActivity {
                 testWXPay();
             }
         });
+        btnUnionPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                testUnionPay();
+            }
+        });
         
 
+    }
+
+    private void testUnionPay() {
+        UnionPay unionPay = new UnionPay();
+
+        //构造银联订单实体。一般都是由服务端直接返回。测试时可以用Mode.TEST,发布时用Mode.RELEASE。
+        UnionPayInfoImpli uniPayInfoImpli = new UnionPayInfoImpli();
+        uniPayInfoImpli.setTn("814144587819703061900");
+        uniPayInfoImpli.setMode(Mode.TEST);
+        FastPay.pay(unionPay, this, uniPayInfoImpli, new FastPayCallBack() {
+            @Override
+            public void success() {
+
+            }
+
+            @Override
+            public void faild() {
+
+            }
+
+            @Override
+            public void cancel() {
+
+            }
+        });
     }
 
     private void testWXPay() {
