@@ -13,11 +13,8 @@ Usage(使用)
 		}
 	}
 	
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	dependencies {
+	        compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.1'
 	}
 2.下载库后导入
 
