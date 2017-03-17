@@ -34,4 +34,5 @@ compile project(':fastintegrationpay')
 step2
 -
 **支付宝支付：**
-	
+*配置：无需配置*
+*调用方式*
