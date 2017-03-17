@@ -51,7 +51,7 @@ step2
         final String orderInfo = orderParam + "&"+ sign;
         //-------------------以上数据由后台返回-------------------------
 
-
+	`
         //-----------------------支付宝支付步骤------------------------
         AliPay aliPay = new AliPay();
         AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
@@ -72,5 +72,6 @@ step2
                 Toast.makeText(getBaseContext(),"支付取消",Toast.LENGTH_SHORT);
             }
         });
+	`
     }
 ````
