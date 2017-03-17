@@ -33,5 +33,5 @@ compile project(':fastintegrationpay')
 ```
 step2
 -
-*支付宝支付：*
+**支付宝支付：**
 	
