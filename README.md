@@ -41,7 +41,8 @@ step2
 
 	AliPay aliPay = new AliPay();
         AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
-        payInfoImpli.setOrderInfo(orderInfo);
+	//orderInfo由后台返回
+	payInfoImpli.setOrderInfo(orderInfo);
         FastPay.pay(aliPay, this, payInfoImpli, new FastPayCallBack() {
             @Override
             public void success() {
