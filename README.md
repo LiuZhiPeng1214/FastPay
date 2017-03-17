@@ -6,7 +6,4 @@ FastPay
       
 Usage(使用)
 ---------------------------
-step1
-在      
-
-
+step1<br>在gradle中使用
