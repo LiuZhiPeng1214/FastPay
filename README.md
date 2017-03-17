@@ -109,6 +109,10 @@ step2
 **配置：（参照DEMO）<br>**
 	*在你的项目包名(applicationId：com.xxx.xxx)目录下建立.wxapi（如com.xxx.xxx.wxapi）目 录。<br>在目录下新建WXPayEntryActivity.java,继承WXPayEntryBaseActivity.java,实现getWXAppId()方法。<br>
 	*在androidMainfest中添加<br>
+	
+	
+	
+	
 	```
 	 <activity
             android:name=".wxapi.WXPayEntryActivity"
@@ -116,7 +120,7 @@ step2
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
 	    
-	 ```   
+	```   
 **调用方式<br>**
 	
 ```
