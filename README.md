@@ -20,4 +20,6 @@ allprojects {
 dependencies {
 		compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.1'
 	}
-```下载库后导入
+```
+
+下载库后导入
