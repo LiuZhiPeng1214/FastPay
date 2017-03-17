@@ -14,7 +14,8 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	}
-```<br>在module下的build.gradle中添加<br>
+```
+在module下的build.gradle中添加<br>
 ```
 dependencies {
 		compile 'com.github.User:Repo:Tag'
