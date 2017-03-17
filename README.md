@@ -105,3 +105,42 @@ step2
     }
 
 ```
+**微信支付：<br>**
+**配置：（参照DEMO）<br>**
+	*在你的项目包名(applicationId：com.xxx.xxx)目录下建立.wxapi（如com.xxx.xxx.wxapi）目 录。<br>在目录下新建WXPayEntryActivity.java,继承WXPayEntryBaseActivity.java,实现getWXAppId()方法。
+**调用方式<br>**
+	
+```
+ private void testWXPay() {
+        //实现微信支付策略
+        String wxAppId = "";
+        WXPay wxPay = WXPay.getInstance(this,wxAppId);
+        WXPayInfoImpli wxPayInfoImpli = new WXPayInfoImpli();
+        wxPayInfoImpli.setAppid("");
+        wxPayInfoImpli.setNonceStr("");
+        wxPayInfoImpli.setPackageValue("");
+        wxPayInfoImpli.setPartnerid("");
+        wxPayInfoImpli.setPrepayId("");
+        wxPayInfoImpli.setSign("");
+        wxPayInfoImpli.setTimestamp("");
+        wxPay.fastPay(this, wxPayInfoImpli, new FastPayCallBack() {
+            @Override
+            public void success() {
+                
+            }
+
+            @Override
+            public void faild() {
+
+            }
+
+            @Override
+            public void cancel() {
+
+            }
+        });
+    }
+    
+ ````   
+    
+	
