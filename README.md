@@ -34,8 +34,8 @@ compile project(':fastintegrationpay')
 step2
 -
 **支付宝支付：<br>**
-*配置：无需配置<br>*
-*调用方式<br>*
+**配置：无需配置<br>**
+**调用方式<br>**
 ````
 	private void testAliPay(){
         //此号为支付宝沙箱环境测试账号
@@ -75,6 +75,6 @@ step2
 	
     }
 ````
-**银联支付**
-
-
+**银联支付：<br>**
+**配置：无需配置**
+**调用方式**
