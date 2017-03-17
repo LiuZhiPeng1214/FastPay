@@ -6,7 +6,7 @@ FastPay
       
 Usage(使用)
 ---------------------------
-step1<br>在gradle中直接引用<br>>>在你项目根目录的build.gradle中添加<br>
+[step1]<br>在gradle中直接引用<br>>>在你项目根目录的build.gradle中添加<br>
 ```
 allprojects {
 		repositories {
@@ -22,4 +22,10 @@ dependencies {
 	}
 ```
 
-下载库后导入
+下载库后做为module导入
+
+```
+compile project(':fastintegrationpay')
+```
+
+[step]
