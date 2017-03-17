@@ -36,7 +36,10 @@ step2
 **支付宝支付：<br>**
 *配置：无需配置<br>*
 *调用方式<br>*
-` AliPay aliPay = new AliPay();
+` 
+
+
+	AliPay aliPay = new AliPay();
         AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
         payInfoImpli.setOrderInfo(orderInfo);
         FastPay.pay(aliPay, this, payInfoImpli, new FastPayCallBack() {
@@ -55,4 +58,4 @@ step2
                 Toast.makeText(getBaseContext(),"支付取消",Toast.LENGTH_SHORT);
             }
         });
-	`
+`
