@@ -78,3 +78,30 @@ step2
 **银联支付：<br>**
 **配置：无需配置<br>**
 **调用方式<br>**
+```
+ private void testUnionPay() {
+        UnionPay unionPay = new UnionPay();
+
+        //构造银联订单实体。一般都是由服务端直接返回。测试时可以用Mode.TEST,发布时用Mode.RELEASE。
+        UnionPayInfoImpli uniPayInfoImpli = new UnionPayInfoImpli();
+        uniPayInfoImpli.setTn("814144587819703061900");
+        uniPayInfoImpli.setMode(Mode.TEST);
+        FastPay.pay(unionPay, this, uniPayInfoImpli, new FastPayCallBack() {
+            @Override
+            public void success() {
+
+            }
+
+            @Override
+            public void faild() {
+
+            }
+
+            @Override
+            public void cancel() {
+
+            }
+        });
+    }
+
+```
