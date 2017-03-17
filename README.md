@@ -107,7 +107,7 @@ step2
 ```
 **微信支付：<br>**
 **配置：（参照DEMO）<br>**
-	*在你的项目包名(applicationId：com.xxx.xxx)目录下建立.wxapi（如com.xxx.xxx.wxapi）目 录。<br>在目录下新建WXPayEntryActivity.java,继承WXPayEntryBaseActivity.java,实现getWXAppId()方法。
+	*在你的项目包名(applicationId：com.xxx.xxx)目录下建立.wxapi（如com.xxx.xxx.wxapi）目 录。<br>在目录下新建WXPayEntryActivity.java,继承WXPayEntryBaseActivity.java,实现getWXAppId()方法。<br>
 **调用方式<br>**
 	
 ```
