@@ -6,4 +6,4 @@ FastPay
       
 Usage(使用)
 ---------------------------
-step1<br>在gradle中使用
+step1<br>在gradle中直接引用<br>Add it in your root build.gradle at the end of repositories:
