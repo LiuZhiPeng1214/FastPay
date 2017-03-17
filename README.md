@@ -13,6 +13,6 @@ allprojects {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
+	}//
 
-zaini
+
