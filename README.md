@@ -6,4 +6,10 @@ FastPay
       
 Usage(使用)
 ---------------------------
-step1<br>在gradle中直接引用<br>Add it in your root build.gradle at the end of repositories:
+step1<br>在gradle中直接引用<br>在你项目根目录的build.gradle中添加
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
