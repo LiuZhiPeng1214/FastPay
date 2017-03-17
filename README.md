@@ -13,4 +13,4 @@ allprojects {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
+	}<br>在你项目
