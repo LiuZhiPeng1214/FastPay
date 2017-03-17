@@ -31,5 +31,8 @@ dependencies {
 ```
 compile project(':fastintegrationpay')
 ```
+step2
+-
 
-[step]
+#支付宝支付：<br>
+	
