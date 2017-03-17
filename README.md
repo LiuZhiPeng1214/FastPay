@@ -18,6 +18,6 @@ allprojects {
 在module下的build.gradle中添加<br>
 ```
 dependencies {
-		compile 'com.github.User:Repo:Tag'
+		compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.1'
 	}
-```	
+```下载库后导入
