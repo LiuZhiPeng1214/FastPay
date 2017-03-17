@@ -33,6 +33,26 @@ compile project(':fastintegrationpay')
 ```
 step2
 -
-**支付宝支付：**
-*配置：无需配置*
-*调用方式*
+**支付宝支付：<br>**
+*配置：无需配置<br>*
+*调用方式<br>*
+` AliPay aliPay = new AliPay();
+        AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
+        payInfoImpli.setOrderInfo(orderInfo);
+        FastPay.pay(aliPay, this, payInfoImpli, new FastPayCallBack() {
+            @Override
+            public void success() {
+                Toast.makeText(getBaseContext(),"支付成功",Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void faild() {
+                Toast.makeText(getBaseContext(),"支付失败",Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void cancel() {
+                Toast.makeText(getBaseContext(),"支付取消",Toast.LENGTH_SHORT);
+            }
+        });
+	`
