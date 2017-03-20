@@ -1,4 +1,4 @@
-package com.eme.wxapi;
+package com.eme.fastpay.wxapi;
 
 import com.eme.fastintegrationpay.activity.WXPayEntryBaseActivity;
 
@@ -10,6 +10,6 @@ public class WXPayEntryActivity extends WXPayEntryBaseActivity {
     @Override
     public String getWXAppId() {
         //appid
-        return null;
+        return "";
     }
 }

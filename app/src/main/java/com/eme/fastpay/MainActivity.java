@@ -15,6 +15,7 @@ import com.eme.fastintegrationpay.unionpay.UnionPay;
 import com.eme.fastintegrationpay.unionpay.UnionPayInfoImpli;
 import com.eme.fastintegrationpay.wxpay.WXPay;
 import com.eme.fastintegrationpay.wxpay.WXPayInfoImpli;
+import com.eme.fastpay.utils.OrderInfoUtil2_0;
 
 import java.util.Map;
 
@@ -116,9 +117,10 @@ public class MainActivity extends AppCompatActivity {
         String privateKey = rsa2 ? RSA2_PRIVATE:RSA_PRIVATE;
         String sign = OrderInfoUtil2_0.getSign(params,privateKey,rsa2);
         final String orderInfo = orderParam + "&"+ sign;
+        //-------------------以上数据由后台返回-------------------------
 
 
-        //-----------------------支付宝支付逻辑------------------------
+        //-----------------------支付宝支付步骤------------------------
         AliPay aliPay = new AliPay();
         AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
         payInfoImpli.setOrderInfo(orderInfo);

@@ -1,4 +1,4 @@
-package com.eme.fastpay;
+package com.eme.fastpay.utils;
 
 import java.security.KeyFactory;
 import java.security.PrivateKey;

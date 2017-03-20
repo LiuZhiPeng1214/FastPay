@@ -1,4 +1,4 @@
-package com.eme.fastpay;
+package com.eme.fastpay.utils;
 
 public final class Base64 {
 
