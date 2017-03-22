@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.alipay.sdk.app.EnvUtils;
 import com.eme.fastintegrationpay.FastPay;
 import com.eme.fastintegrationpay.FastPayCallBack.FastPayCallBack;
 import com.eme.fastintegrationpay.alipay.AliPay;
@@ -120,14 +121,19 @@ public class MainActivity extends AppCompatActivity {
         //-------------------以上数据由后台返回-------------------------
 
 
+
+        //此句为沙箱测试，默认为生产环境，上线时可删除
+        EnvUtils.setEnv(EnvUtils.EnvEnum.SANDBOX);
         //-----------------------支付宝支付步骤------------------------
+
+
         AliPay aliPay = new AliPay();
         AliPayInfoImpli payInfoImpli = new AliPayInfoImpli();
         payInfoImpli.setOrderInfo(orderInfo);
         FastPay.pay(aliPay, this, payInfoImpli, new FastPayCallBack() {
             @Override
             public void success() {
-                Toast.makeText(getBaseContext(),"支付成功",Toast.LENGTH_SHORT);
+
             }
 
             @Override
