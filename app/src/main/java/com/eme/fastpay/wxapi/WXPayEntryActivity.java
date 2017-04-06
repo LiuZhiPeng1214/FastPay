@@ -9,7 +9,8 @@ import com.eme.fastintegrationpay.activity.WXPayEntryBaseActivity;
 public class WXPayEntryActivity extends WXPayEntryBaseActivity {
     @Override
     public String getWXAppId() {
-        //appid
-        return "";
+        //填写appid
+        String WXAppId = "";
+        return WXAppId;
     }
 }
