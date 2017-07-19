@@ -29,7 +29,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/alipaySdk.jar')
-    compile files('libs/libammsdk.jar')
     compile files('libs/UPPayAssistEx.jar')
     compile files('libs/UPPayPluginExPro.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }
