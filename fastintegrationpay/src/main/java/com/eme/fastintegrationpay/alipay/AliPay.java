@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.alipay.sdk.app.PayTask;
 import com.eme.fastintegrationpay.FastPayCallBack.FastPayCallBack;
@@ -61,6 +62,7 @@ public class AliPay implements FastPayMethod<AliPayInfoImpli> {
                      */
                     String resultInfo = payResult.getResult();// 同步返回需要验证的信息
                     String resultStatus = payResult.getResultStatus();
+                    Log.e("err",resultInfo);
                     // 判断resultStatus 为9000则代表支付成功
                     if (TextUtils.equals(resultStatus, "9000")) {
                         if (mCallBack != null) {
