@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/LiuZhiPeng1214/FastPay.svg)](https://jitpack.io/#LiuZhiPeng1214/FastPay)
 FastPay
 =======
       FastPay高度封装并集成了Android 端的支付宝支付、微信支付和银联支付。使用此库，可以简单高效的实现支付功能，节省了开发者看官方文档的时间
