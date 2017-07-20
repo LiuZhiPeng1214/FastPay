@@ -23,7 +23,7 @@ allprojects {
 在module下的build.gradle中添加<br>
 ```
 dependencies {
-		compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.1'
+	        compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.1-beta'
 	}
 ```
 
