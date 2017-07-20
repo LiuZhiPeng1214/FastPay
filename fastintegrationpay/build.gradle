@@ -34,5 +34,5 @@ dependencies {
     compile files('libs/alipaySdk.jar')
     compile files('libs/UPPayAssistEx.jar')
     compile files('libs/UPPayPluginExPro.jar')
-    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.3.4'
+    compile files('libs/wechat-sdk-android-with-mta-1.3.4.jar')
 }
