@@ -35,4 +35,5 @@ dependencies {
     compile files('libs/UPPayAssistEx.jar')
     compile files('libs/UPPayPluginExPro.jar')
     compile files('libs/wechat-sdk-android-with-mta-1.3.4.jar')
+    compile 'com.vise.xiaoyaoyou:viselog:1.1.2'
 }

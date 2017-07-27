@@ -9,6 +9,7 @@ import com.tencent.mm.opensdk.constants.Build;
 import com.tencent.mm.opensdk.modelpay.PayReq;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.vise.log.ViseLog;
 
 /**
  * Created by eme on 2017/3/13.
@@ -79,6 +80,7 @@ public class WXPay implements FastPayMethod<WXPayInfoImpli> {
 
     //支付回调响应
     public void onResp(int error_code) {
+        ViseLog.d("error_code:"+error_code);
         if (fastPayCallBack == null) {
             return;
         }
@@ -96,6 +98,21 @@ public class WXPay implements FastPayMethod<WXPayInfoImpli> {
         fastPayCallBack = null;
     }
 
+    public String LogExplanation(int error_code) {
+       String message = "";
+        switch (error_code) {
+            case 0:
+                message = "error_code:0\n  Success!!! ";
+                break;
+            case -1:
+                message = "error:-1\n   Failed!!! \n可能的原因：签名错误、未注册APPID、项目设置APPID不正确、注册的APPID与设置的不匹配、其他异常等。";
+                break;
+            case -2:
+                message = "error_code:-2\n   Cancel";
+                break;
+        }
+        return message;
+    }
 
     //检测是否支持微信支付
     private boolean isSupportWXPay(){
