@@ -10,7 +10,7 @@ import com.vise.log.inner.LogcatTree;
  * Created by eme on 2017/7/27.
  */
 
-public class MyApplication extends Application{
+public class FastPayApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();

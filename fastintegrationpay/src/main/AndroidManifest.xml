@@ -17,7 +17,7 @@
 
 
     <application android:allowBackup="true"
-                 android:name=".application.MyApplication"
+                 android:name=".application.FastPayApplication"
         android:supportsRtl="true">
         <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
         <activity
