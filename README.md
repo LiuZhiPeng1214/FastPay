@@ -23,7 +23,7 @@ allprojects {
 在module下的build.gradle中添加<br>
 ```
 dependencies {
-	        compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.2-beta3'
+	        compile 'com.github.LiuZhiPeng1214:FastPay:v1.0.2-beta6'
 	}
 ```
 
@@ -167,5 +167,5 @@ step2
  联系我
  --
  有问题欢迎ISSUES
- Email:`liuzhipeng1214@gmail.com`
-    
+ Email:`liuzhipeng1214@gmail.com`,`zhipeng_liu@eme.center`
+    
