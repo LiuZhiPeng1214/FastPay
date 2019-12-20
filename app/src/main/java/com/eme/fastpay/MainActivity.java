@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import com.alipay.sdk.app.EnvUtils;
 import com.eme.fastintegrationpay.FastPay;
 import com.eme.fastintegrationpay.FastPayCallBack.FastPayCallBack;
@@ -78,16 +79,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void testWXPay() {
         //实现微信支付策略
-        String wxAppId = "";
+        String wxAppId = "wx7d3c2c4a9210f33d";
         WXPay wxPay = WXPay.getInstance(this,wxAppId);
         WXPayInfoImpli wxPayInfoImpli = new WXPayInfoImpli();
-        wxPayInfoImpli.setAppid("");
-        wxPayInfoImpli.setNonceStr("");
-        wxPayInfoImpli.setPackageValue("");
-        wxPayInfoImpli.setPartnerid("");
-        wxPayInfoImpli.setPrepayId("");
-        wxPayInfoImpli.setSign("");
-        wxPayInfoImpli.setTimestamp("");
+        wxPayInfoImpli.setAppid(wxAppId);
+        wxPayInfoImpli.setNonceStr("5bc7563d32354f24ac409dc6ad1d5aa8");
+        wxPayInfoImpli.setPackageValue("Sign=WXPay");
+        wxPayInfoImpli.setPartnerid("1560888331");
+        wxPayInfoImpli.setPrepayId("wx12101118475368ac52b376e81628203800");
+        wxPayInfoImpli.setSign("7B7BCB9EC1D5E7494933D1FB9951ED90");
+        wxPayInfoImpli.setTimestamp("1573524678");
         wxPay.fastPay(this, wxPayInfoImpli, new FastPayCallBack() {
             @Override
             public void success() {
